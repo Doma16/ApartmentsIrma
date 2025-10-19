@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apartments - Modern Apartments</title>
+    <title>Apartments Irma</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -12,13 +12,33 @@
 <body class="bg-white text-gray-900">
 
     <!-- Navbar -->
-    <header class="flex justify-between items-center px-8 py-4 border-b">
-        <h1 class="text-2xl font-semibold tracking-tight">Apartments Irma</h1>
-        <nav class="space-x-6 text-sm">
-            <a href="index.html" class="hover:text-gray-600">Home</a>
-            <a href="apartments.html" class="hover:text-gray-600 font-medium">Apartments</a>
-            <a href="amenities.html" class="hover:text-gray-600">Amenities</a>
-            <a href="contact.html" class="hover:text-gray-600">Contact</a>
+    <header class="border-b px-6 py-4">
+        <div class="flex justify-between items-center">
+            <a href="index.html">
+                <h1 class="text-2xl font-semibold tracking-tight">Apartments Irma</h1>
+            </a>
+
+
+            <!-- Desktop nav -->
+            <nav class="hidden md:flex space-x-6 text-sm">
+                <a href="index.html" class="hover:text-gray-600">Home</a>
+                <a href="apartments.html" class="hover:text-gray-600">Apartments</a>
+                <a href="amenities.html" class="hover:text-gray-600">Amenities</a>
+                <a href="contact.html" class="hover:text-gray-600">Contact</a>
+            </nav>
+
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-900 focus:outline-none">
+                ☰
+            </button>
+        </div>
+
+        <!-- Mobile nav menu -->
+        <nav id="mobile-menu" class="hidden flew-wrap justify-center flex-col mt-4 space-y-3 text-sm md:hidden">
+            <a href="index.html" class="block py-2 hover:text-gray-600">Home</a>
+            <a href="apartments.html" class="block py-2 hover:text-gray-600">Apartments</a>
+            <a href="amenities.html" class="block py-2 hover:text-gray-600">Amenities</a>
+            <a href="contact.html" class="block py-2 hover:text-gray-600">Contact</a>
         </nav>
     </header>
 
@@ -79,8 +99,10 @@
 
     <!-- Footer -->
     <footer class="border-t py-6 text-center text-sm text-gray-500">
-        © 2025 Modern Apartments. All rights reserved.
+        © 2025 Apartments Irma. All rights reserved.
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

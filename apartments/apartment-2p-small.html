@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4-Person Big Apartment - Apartments Irma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body class="bg-white text-gray-900">
+    <!-- Navbar -->
+    <header class="border-b px-6 py-4">
+        <div class="flex justify-between items-center">
+            <a href="../index.html">
+                <h1 class="text-2xl font-semibold tracking-tight">Apartments Irma</h1>
+            </a>
+
+            <!-- Desktop nav -->
+            <nav class="hidden md:flex space-x-6 text-sm">
+                <a href="../index.html" class="hover:text-gray-600">Home</a>
+                <a href="../apartments.html" class="hover:text-gray-600">Apartments</a>
+                <a href="../amenities.html" class="hover:text-gray-600">Amenities</a>
+                <a href="../contact.html" class="hover:text-gray-600">Contact</a>
+            </nav>
+
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-900 focus:outline-none">
+                ☰
+            </button>
+        </div>
+
+        <!-- Mobile nav menu -->
+        <nav id="mobile-menu" class="hidden flew-wrap justify-center flex-col mt-4 space-y-3 text-sm md:hidden">
+            <a href="../index.html" class="block py-2 hover:text-gray-600">Home</a>
+            <a href="../apartments.html" class="block py-2 hover:text-gray-600">Apartments</a>
+            <a href="../amenities.html" class="block py-2 hover:text-gray-600">Amenities</a>
+            <a href="../contact.html" class="block py-2 hover:text-gray-600">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Apartment Details -->
+    <section class="max-w-5xl mx-auto px-8 py-20">
+        <h2 class="text-4xl font-light mb-6">4-Person Big Apartment</h2>
+
+        <!-- Main hero image -->
+        <img src="../images/apt-4p-big.jpg" alt="4-Person Big Apartment"
+            class="rounded-2xl shadow-lg mb-8 w-full h-96 object-cover" />
+
+        <p class="text-gray-600 mb-6">
+            Spacious and modern apartment designed for 4 people. Features 2 bedrooms, full kitchen,
+            large living area, and balcony with city views. Perfect for families or groups who want comfort and style.
+        </p>
+
+        <!-- Image gallery -->
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <img src="../images/apt-4p-livingroom.jpg" alt="Living Room" loading="lazy"
+                class="rounded-xl shadow-lg w-full h-64 object-cover hover:scale-105 transition" />
+            <img src="../images/apt-4p-bedroom.jpg" alt="Bedroom" loading="lazy"
+                class="rounded-xl shadow-lg w-full h-64 object-cover hover:scale-105 transition" />
+            <img src="../images/apt-4p-kitchen.jpg" alt="Kitchen" loading="lazy"
+                class="rounded-xl shadow-lg w-full h-64 object-cover hover:scale-105 transition" />
+            <img src="../images/apt-4p-balcony.jpg" alt="Balcony" loading="lazy"
+                class="rounded-xl shadow-lg w-full h-64 object-cover hover:scale-105 transition" />
+        </div>
+
+        <div class="flex gap-6">
+            <a href="../contact.html"
+                class="bg-gray-900 text-white px-6 py-3 rounded-full hover:bg-gray-800 transition">Book Now</a>
+            <a href="../apartments.html" class="underline text-gray-900 hover:text-gray-600">Back to Apartments</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t py-6 text-center text-sm text-gray-500">
+        © 2025 Apartments Irma. All rights reserved.
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
